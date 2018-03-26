@@ -114,7 +114,7 @@ bool bodyIsValid(const std::string &document) {
     }
 
     string temp = data.substr(data.find("<body"), data.find("</body") - data.find("<body"));
-    if (string::npos != temp.find("id") && temp.find("id") < data.find(">"))//判断id是否在>前面
+    if (string::npos != temp.find("id") && temp.find("id") < data.find(">"))
     {
         bool flag = false;
         int i = temp.find("id");
